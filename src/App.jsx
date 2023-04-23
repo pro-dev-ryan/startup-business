@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App font-hanken w-full max-w-[1320px] lg:mx-auto">
+    <div className="font-hanken w-full">
       <Navbar />
       <Hero />
       <Partner />
