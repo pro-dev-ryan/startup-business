@@ -12,6 +12,7 @@ export default {
         neutral: "#8492A7",
         grayText: "#ADB7C2",
         bgColor: "#F0F9FE",
+        lightBorder: "#DEE7EE",
       },
     },
   },

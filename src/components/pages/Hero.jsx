@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
           <div>
             <form action="">
-              <div className="rounded-sm w-full lg:w-10/12 flex justify-between bg-white p-1 ">
+              <div className="rounded-sm w-11/12 lg:w-10/12 flex justify-between bg-white p-1 ">
                 <div className="flex relative">
                   <span className="absolute left-1 top-1/2 -translate-y-1/2">
                     <svg
