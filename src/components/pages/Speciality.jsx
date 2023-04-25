@@ -6,6 +6,7 @@ import icon4 from "../../assets/cards-icon/icon4.svg";
 import icon5 from "../../assets/cards-icon/icon5.svg";
 import icon6 from "../../assets/cards-icon/icon6.svg";
 import bg from "../../assets/cards-icon/bg.svg";
+import Button from "../Button";
 
 const Speciality = () => {
   const datas = [
@@ -55,7 +56,7 @@ const Speciality = () => {
         <h3 className="text-xl lg:text-3xl xl:text-4xl font-semibold text-secondary">
           What Makes Us Unique From Others
         </h3>
-        <div className="grid grid-cols-1 gap-2 lg:gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-2 lg:gap-7 md:grid-cols-2 lg:grid-cols-3">
           {/* Card Plate style */}
           {datas.map((data, i) => (
             <div
@@ -70,14 +71,17 @@ const Speciality = () => {
                   alt="icon"
                 />
               </div>
-              <h4 className="font-semibold text-lg lg:text-lg text-secondary">
+              <h4 className="font-semibold text-xl lg:text-2xl text-secondary">
                 {data.title}
               </h4>
-              <p className="text-neutral text-sm lg:text-base">
+              <p className="text-neutral text-sm lg:text-base xl:text-lg">
                 {data.subTitle}
               </p>
             </div>
           ))}
+        </div>
+        <div className="flex items-center justify-center">
+          <Button text={"Get In Touch"} />
         </div>
       </div>
     </div>
