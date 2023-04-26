@@ -5,7 +5,7 @@ const GradBg = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row justify-center items-center bg-[#f7f9fc] section-plate">
       <div className="w-full md:w-1/2 space-y-5 mx-6">
-        <h3 className="text-xl lg:text-3xl xl:text-4xl text-secondary font-semibold">
+        <h3 className="title">
           Bestkit Develope Creative Solutions for Companies of All Niches
         </h3>
         <p className="text-sm lg:text-lg text-neutral font-medium">

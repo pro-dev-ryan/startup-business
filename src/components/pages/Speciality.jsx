@@ -49,7 +49,7 @@ const Speciality = () => {
   ];
   return (
     <div className="bg-[#F7F9FC]">
-      <div className="mx-6 text-center space-y-5">
+      <div className="mx-6 text-center space-y-5 section-plate">
         <p className="text-sm lg:text-lg text-primary font-medium">
           Our core values & principles
         </p>
