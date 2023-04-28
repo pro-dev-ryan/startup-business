@@ -38,11 +38,9 @@ const Services = () => {
   ];
   return (
     <div className="bg-[#e5e5e500]">
-      <div className="section-plate lg:space-y-7">
-        <div className="lg:mb-10">
-          <p className="text-primary text-sm lg:text-base xl:text-lg font-semibold text-center lg:text-left">
-            HOW CAN WE HELP
-          </p>
+      <div className="section-plate lg:space-y-7 section-gap">
+        <div className="">
+          <p className="sub-head">HOW CAN WE HELP</p>
           <div className="flex flex-col items-center lg:items-start gap-5 lg:gap-0 lg:flex-row justify-between">
             <h3 className="title w-full text-center md:text-left lg:w-[36%]">
               special outstanding services for startups business
@@ -58,8 +56,8 @@ const Services = () => {
             <div
               key={key}
               className={`bg-[#ffffff] ${
-                data.id % 2 != 0 ? "" : "md:relative md:-top-10"
-              }  shadow-xl shadow-[#D2D9E059] p-12 space-y-5 border-0 border-b-primary hover:border-b-2`}
+                data.id % 2 != 0 ? "static" : "md:relative md:-top-10"
+              }   p-12 space-y-5 border-transparent transition-border duration-200 border-b-primary hover:border-b-4`}
             >
               <img src={data?.icons} alt="" />
               <h4 className="font-semibold text-xl text-secondary">

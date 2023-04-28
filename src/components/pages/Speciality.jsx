@@ -49,10 +49,8 @@ const Speciality = () => {
   ];
   return (
     <div className="bg-[#F7F9FC]">
-      <div className="mx-6 text-center space-y-5 section-plate">
-        <p className="text-sm lg:text-lg text-primary font-medium">
-          Our core values & principles
-        </p>
+      <div className="mx-6 text-center space-y-5 section-plate section-gap">
+        <p className="sub-head text-center">Our core values & principles</p>
         <h3 className="text-xl lg:text-3xl xl:text-4xl font-semibold text-secondary">
           What Makes Us Unique From Others
         </h3>

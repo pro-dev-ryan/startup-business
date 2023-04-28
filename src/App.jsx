@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="font-hanken w-full">
+    <div className="font-hanken w-full bg-[#E5E5E5]">
       <Navbar />
       <Hero />
       <Partner />

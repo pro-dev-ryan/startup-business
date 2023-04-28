@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&display=swap");
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .g::before {
   position: absolute;
   content: "";
@@ -6,22 +11,90 @@
   height: 100%;
   background: linear-gradient(to right, #f7f9fc, transparent);
 }
+.image-bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f9fc48;
+  border-radius: 5px;
+  top: -10%;
+  left: -10%;
+  z-index: -1;
+}
+
+.arrow-left {
+  background-image: url("./assets/testimonials/left.svg");
+}
+.arrow-left:hover {
+  background-image: url("./assets/testimonials/left-active.svg");
+}
+
+.arrow-right {
+  background-image: url("./assets/testimonials/right.svg");
+}
+.arrow-right:hover {
+  background-image: url("./assets/testimonials/right-active.svg");
+}
+
+.background {
+  background-image: url("./assets/testimonials/Testimony.svg");
+  background-repeat: no-repeat;
+}
+.background:hover {
+  background-image: url("./assets/testimonials/Testimony-active.svg");
+  background-repeat: no-repeat;
+}
+
+.qoute {
+  background-image: url("./assets/testimonials/quotation.svg");
+  background-repeat: no-repeat;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.title {
-  @apply text-xl lg:text-3xl xl:text-4xl text-secondary font-semibold;
+@layer components {
+  .sub-head {
+    @apply text-primary text-sm lg:text-base xl:text-lg font-semibold text-center lg:text-left uppercase;
+  }
+  .neutral-text {
+    @apply text-neutral font-medium lg:text-lg;
+  }
+}
+.portfolio-btn {
+  @apply text-neutral hover:text-primary text-lg font-medium;
 }
 
+.section-gap {
+  @apply md:py-5 lg:py-10 xl:py-14;
+}
+
+.bar {
+  @apply h-1 bg-[#DEE7EE] relative;
+}
+.bar-active {
+  @apply absolute top-0 left-0 bg-primary h-full;
+}
+.text-gap {
+  @apply space-y-2 lg:space-y-2 xl:space-y-5;
+}
+.tab-btn {
+  @apply px-2 py-1 rounded-sm hover:bg-[#45a8ff];
+}
+.tab-btn:active {
+  @apply bg-primary text-white;
+}
+.title {
+  @apply text-xl lg:text-3xl xl:text-4xl text-secondary font-semibold capitalize;
+}
 .section-plate {
   @apply mx-2 md:mx-4 lg:mx-6 xl:mx-auto max-w-[1320px];
 }
 .section-div {
   @apply w-full px-2 lg:px-4 max-w-7xl xl:mx-auto;
 }
-
 .link-style {
   @apply hover:text-primary focus:text-primary font-medium;
 }
