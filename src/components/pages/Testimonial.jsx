@@ -1,8 +1,8 @@
 import React from "react";
 import Testimony from "../Testimony";
 import avatar from "../../assets/testimonials/images/Avatar.png";
-import avatar2 from "../../assets/testimonials/images/Avatar 2.png";
-import avatar3 from "../../assets/testimonials/images/Avatar 3.png";
+import avatar2 from "../../assets/testimonials/images/Avatar 1.png";
+import avatar3 from "../../assets/testimonials/images/Avatar 2.png";
 
 const Testimonial = () => {
   const datas = [
@@ -29,10 +29,10 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div className="bg-[#e5e5e5]">
+    <div className="">
       <div className="section-plate section-gap">
-        <div className="flex justify-between">
-          <div className="">
+        <div className="flex justify-between items-end">
+          <div className="text-gap">
             <p className="sub-head">testimonial</p>
             <h3 className="title lg:w-[60%]">
               See what others have to say about us
@@ -43,7 +43,7 @@ const Testimonial = () => {
             <button className="arrow-right w-12 h-12 rounded-sm transition-all duration-200"></button>
           </div>
         </div>
-        <div className="flex justify-between gap-5">
+        <div className="flex justify-between gap-5 xl:mt-7">
           {datas.map((data, i) => (
             <Testimony data={data} />
           ))}

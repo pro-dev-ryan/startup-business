@@ -13,6 +13,7 @@ export default {
         grayText: "#ADB7C2",
         bgColor: "#F0F9FE",
         lightBorder: "#DEE7EE",
+        mainBg: "#E5E5E5",
       },
     },
   },
