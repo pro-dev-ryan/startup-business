@@ -51,6 +51,23 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
 }
 
+.collapsed-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222d39;
+}
+
+.collapsed {
+  background-image: url("./assets/FAQ/minus.svg");
+  background-repeat: no-repeat;
+}
+.non-collapsed {
+  background-image: url("./assets/FAQ/plus.svg");
+  background-repeat: no-repeat;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -60,7 +77,10 @@ body::-webkit-scrollbar {
     @apply text-primary text-sm lg:text-base xl:text-lg font-semibold text-center lg:text-left uppercase;
   }
   .neutral-text {
-    @apply text-neutral font-medium lg:text-lg;
+    @apply text-neutral font-medium lg:text-lg leading-7;
+  }
+  .footer-titles {
+    @apply font-semibold text-2xl leading-[28.04px] text-white capitalize mb-7;
   }
 }
 .portfolio-btn {

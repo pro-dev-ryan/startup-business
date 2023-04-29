@@ -7,14 +7,14 @@ import avatar3 from "../../assets/testimonials/images/Avatar 2.png";
 const Testimonial = () => {
   const datas = [
     {
-      clientName: "Md Shamim Hossain",
+      clientName: "Jhon Smith",
       occupation: "UI/UX",
       image: avatar,
       comment:
         "Lorem Ipsum is a simply dummy text of an the printing and type settings for has been the industry's standard dumy text the ever since unknown printer.",
     },
     {
-      clientName: "Jhon Smith",
+      clientName: "Md Shamim Hossain",
       occupation: "Web Developer",
       image: avatar2,
       comment:

@@ -56,8 +56,8 @@ const Services = () => {
             <div
               key={key}
               className={`bg-[#ffffff] ${
-                data.id % 2 != 0 ? "static" : "md:relative md:-top-10"
-              }   p-12 space-y-5 border-transparent transition-border duration-200 border-b-primary hover:border-b-4`}
+                data.id % 2 != 0 ? "" : "md:relative md:-top-10"
+              } shadow-xl shadow-[#D2D9E059]  p-12 space-y-5 border-0 transition-border duration-200 border-b-primary hover:border-b-4 rounded-sm`}
             >
               <img src={data?.icons} alt="" />
               <h4 className="font-semibold text-xl text-secondary">
