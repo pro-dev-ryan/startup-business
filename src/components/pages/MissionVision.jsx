@@ -12,7 +12,7 @@ const MissionVision = () => {
         </div>
       </div>
       {/* Text-content */}
-      <div className="w-full pt-2 pl-4 md:w-1/2">
+      <div className="w-full my-auto pl-4 md:w-1/2">
         <p className="sub-head">Learn about us</p>
         <h2 className="title pb-[25px]">
           Brainstorming Sessions Churning Out New Ideas

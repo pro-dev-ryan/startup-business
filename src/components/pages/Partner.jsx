@@ -35,7 +35,7 @@ const Partner = () => {
   ];
   return (
     <div>
-      <div className="md:flex flex-col justify-center items-center gap-10 section-plate">
+      <div className="md:flex flex-col justify-center items-center gap-10 section-plate py-[140px]">
         <p className="partner-text">
           proud marketing <span className="text-primary">Partner</span> with
         </p>

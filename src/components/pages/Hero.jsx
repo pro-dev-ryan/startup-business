@@ -22,7 +22,10 @@ const Hero = () => {
           </p>
           <div>
             <form action="">
-              <div className="rounded-sm w-11/12 lg:w-10/12 flex justify-between bg-white p-2">
+              <div
+                className="rounded-sm w-11/12 lg:w-10/12 flex justify-between bg-white ring-2 ring-transparent
+                    hover:ring-primary focus:ring-primary  transition-ring duration-200"
+              >
                 <div className="flex relative w-full h-[61px]  max-h-[71px]">
                   <span className="absolute left-[30px] top-1/2 -translate-y-1/2">
                     <svg
@@ -50,7 +53,7 @@ const Hero = () => {
                   </span>
                   <input
                     type="text"
-                    className="pl-[65px] w-full"
+                    className="pl-[65px] w-full outline-none"
                     placeholder="Enter Your Mail"
                   />
                   <div className="absolute right-0">
