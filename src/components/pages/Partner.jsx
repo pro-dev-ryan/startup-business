@@ -34,9 +34,9 @@ const Partner = () => {
     },
   ];
   return (
-    <div className="section-gap">
-      <div className="hidden md:flex flex-col justify-center items-center gap-10 section-plate">
-        <p className="uppercase text-lg text-secondary text-medium">
+    <div>
+      <div className="md:flex flex-col justify-center items-center gap-10 section-plate">
+        <p className="partner-text">
           proud marketing <span className="text-primary">Partner</span> with
         </p>
         <div className="flex w-full items-center justify-between">

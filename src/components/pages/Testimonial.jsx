@@ -3,6 +3,7 @@ import Testimony from "../Testimony";
 import avatar from "../../assets/testimonials/images/Avatar.png";
 import avatar2 from "../../assets/testimonials/images/Avatar 1.png";
 import avatar3 from "../../assets/testimonials/images/Avatar 2.png";
+import Left from "../../assets/testimonials/Left";
 
 const Testimonial = () => {
   const datas = [
@@ -39,7 +40,12 @@ const Testimonial = () => {
             </h3>
           </div>
           <div className="flex gap-2 md:gap-3 xl:gap-5 items-center">
-            <button className="arrow-left w-12 h-12 rounded-sm transition-all duration-200"></button>
+            <button
+              href="/"
+              className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-200"
+            >
+              <Left />
+            </button>
             <button className="arrow-right w-12 h-12 rounded-sm transition-all duration-200"></button>
           </div>
         </div>

@@ -16,17 +16,17 @@ function App() {
   return (
     <div className="font-hanken w-full">
       <Navbar />
-      <Hero />
-      <Partner />
-      <MissionVision />
-      <Profile />
-      <Progress />
-      <Services />
-      <GradBg />
-      <Filter />
-      <Speciality />
-      <Testimonial />
-      <Accordion />
+        <Hero />
+        <Partner />
+        <MissionVision />
+        <Profile />
+        <Progress />
+        <Services />
+        <GradBg />
+        <Filter />
+        <Speciality />
+        <Testimonial />
+        <Accordion />
       <Footer />
     </div>
   );

@@ -46,6 +46,38 @@ body::-webkit-scrollbar {
   color: #8492a7;
 }
 
+.partner-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222d39;
+}
+.sub-head {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #008aff;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  color: #222d39;
+}
+.neutral-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #8492a7;
+}
 .g::before {
   position: absolute;
   content: "";
@@ -57,11 +89,11 @@ body::-webkit-scrollbar {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
-  background-color: #f7f9fc48;
+  height: 665px;
+  background-color: #f7f9fc;
   border-radius: 5px;
-  top: -10%;
-  left: -10%;
+  top: -50px;
+  left: -50px;
   z-index: -1;
 }
 
@@ -115,12 +147,6 @@ body::-webkit-scrollbar {
 @tailwind utilities;
 
 @layer components {
-  .sub-head {
-    @apply text-primary text-sm lg:text-base xl:text-lg font-semibold text-center lg:text-left uppercase;
-  }
-  .neutral-text {
-    @apply text-neutral font-medium lg:text-lg leading-7;
-  }
   .footer-titles {
     @apply font-semibold text-2xl leading-[28.04px] text-white capitalize mb-7;
   }
@@ -147,9 +173,6 @@ body::-webkit-scrollbar {
 }
 .tab-btn:active {
   @apply bg-primary text-white;
-}
-.title {
-  @apply text-xl lg:text-3xl xl:text-4xl text-secondary font-semibold capitalize;
 }
 .section-plate {
   @apply mx-2 md:mx-4 lg:mx-6 xl:mx-auto max-w-[1320px];

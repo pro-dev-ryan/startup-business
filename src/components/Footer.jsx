@@ -67,7 +67,7 @@ const Footer = () => {
             <a href="/" className="text-grayText hover:text-primary">
               <Github />
             </a>
-            <a href="/" className="text-grayText hover:text-primary">
+            <a href="/" className="text-grayText hover:text-primary bg-primary">
               <Twitter />
             </a>
           </div>
