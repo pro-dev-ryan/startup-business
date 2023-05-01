@@ -6,10 +6,11 @@ const Button = ({ text, show }) => {
   };
   return (
     <button
-      className={`lg:flex ${btn.show} items-center outline-none py-1 lg:py-2 px-4 lg:px-6 bg-primary text-white rounded-sm text-sm lg:text-lg font-semibold hover:bg-[#0072d6]`}
+      className={`lg:flex ${btn.show} items-center outline-none pt-[18px] pb-[15px] px-[30px] 
+       bg-primary text-white rounded-sm text-sm lg:text-lg font-semibold hover:bg-[#0072d6]`}
     >
       {text}
-      <i className="fa-solid fa-chevron-right pl-2"></i>{" "}
+      <i className="fa-solid fa-chevron-right pl-[15px]"></i>{" "}
     </button>
   );
 };

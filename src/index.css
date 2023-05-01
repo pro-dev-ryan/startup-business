@@ -1,7 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body::-webkit-scrollbar {
   display: none;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+.nav-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+.hero-span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 76px;
+}
+
+.hero-sub {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #8492a7;
 }
 
 .g::before {
@@ -114,7 +156,4 @@ body::-webkit-scrollbar {
 }
 .section-div {
   @apply w-full px-2 lg:px-4 max-w-7xl xl:mx-auto;
-}
-.link-style {
-  @apply hover:text-primary focus:text-primary font-medium;
 }

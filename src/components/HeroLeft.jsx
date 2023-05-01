@@ -5,14 +5,14 @@ import inner from "../assets/Hero/small-circle.svg";
 const HeroLeft = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="relative z-10 ">
+      <div className="z-10">
         {/* outer circle */}
-        <span className="absolute w-11/12 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 -z-10">
+        <span className="absolute w-[856px] h-[856px] top-[80px] left-1/2 -translate-x-1/2 -z-10">
           <img src={outer} alt="big-circle" className="" />
         </span>
         {/* outer circle  end*/}
         {/* inner circle */}
-        <span className="absolute w-9/12 xl:top-40 md:top-16 lg:top-28 left-1/2 -translate-x-1/2 -z-10">
+        <span className="absolute w-[696px] h-[696px] top-[150px] left-1/2 -translate-x-1/2 -z-10">
           <img src={inner} alt="small-circle" />
         </span>
         {/* inner circle end */}

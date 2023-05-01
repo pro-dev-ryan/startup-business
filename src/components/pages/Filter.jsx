@@ -61,7 +61,7 @@ const Filter = () => {
         </div>
         <Button text={"See More Work"} />
       </div>
-      <div className="grid grid-cols-2 md:gap-3 lg:gap-5 xl:gap-7 justify-items-stretch">
+      <div className="grid grid-cols-2 md:gap-3 lg:gap-5 xl:gap-[70px] pt-[55px] justify-items-stretch">
         {datas.map((data) => (
           <Portfolio key={data.id} data={data} />
         ))}

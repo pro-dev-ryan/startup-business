@@ -1,13 +1,14 @@
 import React from "react";
-import fb from "../assets/footer/fb.svg";
-import dribble from "../assets/footer/dribble.svg";
-import github from "../assets/footer/github.svg";
-import twitter from "../assets/footer/twitter.svg";
+
+import Dribble from "../assets/footer/Dribble.jsx";
+import Fb from "../assets/footer/Fb.jsx";
+import Github from "../assets/footer/Github.jsx";
+import Twitter from "../assets/footer/Twitter.jsx";
 
 const Footer = () => {
   return (
     <div className="bg-secondary">
-      <div className="section-plate py-5">
+      <div className="section-plate">
         <div className="flex items-center justify-between gap-40 py-36">
           <div>
             <h2 className="font-semibold text-[32px] text-white leading-[38.41px] mb-7">
@@ -54,21 +55,21 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full h-[2px] my-2 bg-white bg-opacity-20 divide-solid"></div>
+        <div className="w-full h-[2px] bg-white bg-opacity-20 divide-solid"></div>
         <div className="flex justify-between items-center">
-          <div className="flex gap-5">
-            <button>
-              <img src={fb} alt="" />
-            </button>
-            <button>
-              <img src={dribble} alt="" />
-            </button>
-            <button>
-              <img src={github} alt="" />
-            </button>
-            <button>
-              <img src={twitter} alt="" />
-            </button>
+          <div className="flex gap-5 items-center py-5">
+            <a href="/" className="text-grayText hover:text-primary">
+              <Fb />
+            </a>
+            <a href="/" className="text-grayText hover:text-primary">
+              <Dribble />
+            </a>
+            <a href="/" className="text-grayText hover:text-primary">
+              <Github />
+            </a>
+            <a href="/" className="text-grayText hover:text-primary">
+              <Twitter />
+            </a>
           </div>
           <p className="neutral-text"> &copy; bestkit. All rights reserved</p>
         </div>
