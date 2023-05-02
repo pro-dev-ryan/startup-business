@@ -37,12 +37,12 @@ const Services = () => {
     },
   ];
   return (
-    <div className="bg-[#e5e5e500]">
+    <div className="bg-[#e5e5e500] py-[140px]">
       <div className="section-plate lg:space-y-7 section-gap">
         <div className="">
-          <p className="sub-head">HOW CAN WE HELP</p>
+          <p className="sub-head pb-[10px">HOW CAN WE HELP</p>
           <div className="flex flex-col items-center lg:items-start gap-5 lg:gap-0 lg:flex-row justify-between">
-            <h3 className="title w-full text-center md:text-left lg:w-[36%]">
+            <h3 className="title w-full text-center md:text-left lg:w-[645px]">
               special outstanding services for startups business
             </h3>
             <div className="flex lg:items-end">

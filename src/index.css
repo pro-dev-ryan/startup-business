@@ -78,12 +78,33 @@ body::-webkit-scrollbar {
   line-height: 28px;
   color: #8492a7;
 }
-.g::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #f7f9fc, transparent);
+.image-div h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+.image-div p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+/* tabs-style  */
+.tab-panes .tab-pane {
+  display: none;
+}
+.tab-panes .active {
+  display: block;
+}
+
+.g {
+  background-image: url("./assets/bgGrad/Bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .image-bg::before {
   content: "";
@@ -95,13 +116,6 @@ body::-webkit-scrollbar {
   top: -50px;
   left: -50px;
   z-index: -1;
-}
-
-.arrow-left {
-  background-image: url("./assets/testimonials/left.svg");
-}
-.arrow-left:hover {
-  background-image: url("./assets/testimonials/left-active.svg");
 }
 
 .arrow-right {
@@ -169,14 +183,14 @@ body::-webkit-scrollbar {
   @apply space-y-2 lg:space-y-2 xl:space-y-5;
 }
 .tab-btn {
-  @apply px-2 py-1 rounded-sm hover:bg-[#45a8ff];
+  @apply px-2 py-1 rounded-sm hover:bg-secondary hover:text-white;
 }
-.tab-btn:active {
+.btn-active {
   @apply bg-primary text-white;
 }
 .section-plate {
   @apply mx-2 md:mx-4 lg:mx-6 xl:mx-auto max-w-[1320px];
 }
 .section-div {
-  @apply w-full px-2 lg:px-4 max-w-7xl xl:mx-auto;
+  @apply xl:mx-auto max-w-[1920px];
 }
