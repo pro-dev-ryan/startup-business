@@ -61,7 +61,7 @@ const Speciality = () => {
           {datas.map((data, i) => (
             <div
               key={i}
-              className="p-[50px] bg-white flex flex-col justify-start items-center text-left"
+              className="p-[50px] bg-white flex flex-col justify-start text-left"
             >
               <div className="w-full relative pb-[30px]">
                 <img className="absolute z-10" src={bg} alt="circle" />
@@ -71,7 +71,7 @@ const Speciality = () => {
                   alt="icon"
                 />
               </div>
-              <h5 className="font-semibold text-xl lg:text-2xl pb-[15px] text-secondary leading-[36px]">
+              <h5 className="font-semibold text-xl lg:text-2xl pb-[15px] text-left text-secondary leading-[36px]">
                 {data.title}
               </h5>
               <p className="text-neutral text-sm lg:text-base xl:text-lg">

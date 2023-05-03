@@ -26,34 +26,32 @@ const Testimonial = () => {
       occupation: "Product Manager",
       image: avatar3,
       comment:
-        "Lorem Ipsum is a simply dummy text of an the printing and type settings for has been the industry's standard dumy text the ever since unknown printer.",
+        "Lorem Ipsum is a simply dummy text of an the printing and type settings for has been the industry's standard dummy text the ever since unknown printer.",
     },
   ];
   return (
-    <div className="">
-      <div className="section-plate section-gap">
-        <div className="flex justify-between items-end">
-          <div className="text-gap">
-            <p className="sub-head">testimonial</p>
-            <h3 className="title lg:w-[60%]">
-              See what others have to say about us
-            </h3>
-          </div>
-          <div className="flex gap-2 md:gap-3 xl:gap-5 items-center">
-            <button
-              href="/"
-              className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-200"
-            >
-              <Left />
-            </button>
-            <button className="arrow-right w-12 h-12 rounded-sm transition-all duration-200"></button>
-          </div>
+    <div className="section-plate py-[140px]">
+      <div className="flex justify-between items-end pb-[64px]">
+        <div className="">
+          <p className="sub-head pb-[10px]">testimonial</p>
+          <h3 className="title lg:w-[60%]">
+            See what others have to say about us
+          </h3>
         </div>
-        <div className="flex justify-between gap-5 xl:mt-7">
-          {datas.map((data, i) => (
-            <Testimony data={data} />
-          ))}
+        <div className="flex gap-2 md:gap-3 xl:gap-5 items-center">
+          <button
+            href="/"
+            className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-200"
+          >
+            <Left />
+          </button>
+          <button className="arrow-right w-12 h-12 rounded-sm transition-all duration-200"></button>
         </div>
+      </div>
+      <div className="flex justify-between">
+        {datas.map((data, i) => (
+          <Testimony data={data} />
+        ))}
       </div>
     </div>
   );

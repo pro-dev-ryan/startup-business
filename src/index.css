@@ -125,15 +125,6 @@ body::-webkit-scrollbar {
   background-image: url("./assets/testimonials/right-active.svg");
 }
 
-.background {
-  background-image: url("./assets/testimonials/Testimony.svg");
-  background-repeat: no-repeat;
-}
-.background:hover {
-  background-image: url("./assets/testimonials/Testimony-active.svg");
-  background-repeat: no-repeat;
-}
-
 .qoute {
   background-image: url("./assets/testimonials/quotation.svg");
   background-repeat: no-repeat;
@@ -145,15 +136,6 @@ body::-webkit-scrollbar {
   font-size: 24px;
   line-height: 29px;
   color: #222d39;
-}
-
-.collapsed {
-  background-image: url("./assets/FAQ/minus.svg");
-  background-repeat: no-repeat;
-}
-.non-collapsed {
-  background-image: url("./assets/FAQ/plus.svg");
-  background-repeat: no-repeat;
 }
 
 @tailwind base;
