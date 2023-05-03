@@ -38,13 +38,17 @@ const Filter = () => {
     },
   ];
   return (
-    <div className="section-plate section-gap text-gap">
-      <p className="sub-head text-center">portfolio works</p>
-      <h3 className="title text-center">Some of My Latest Projects</h3>
+    <div className="section-plate pt-[140px]">
+      <p className="sub-head text-center pb-[10px]">portfolio works</p>
+      <h3 className="title text-center pb-[70px]">
+        Some of My Latest Projects
+      </h3>
       <div className="flex items-center justify-between">
         <div className="md:flex gap-2 md:gap-3 lg:gap-5 xl:gap-7">
-          <p className="neutral-text text-secondary">Filter by:</p>
-          <ul className="flex gap-2 md:gap-3 lg:gap-5 xl:gap-7">
+          <p className="neutral-text text-secondary font-semibold">
+            Filter by:
+          </p>
+          <ul className="flex gap-2 md:gap-3 lg:gap-5 xl:gap-[30px]">
             <li>
               <button className="portfolio-btn">All</button>
             </li>

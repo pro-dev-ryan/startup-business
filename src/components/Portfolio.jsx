@@ -6,10 +6,10 @@ const Portfolio = ({ data }) => {
       <div>
         <img className="w-full" src={data?.image} alt="image" />
       </div>
-      <p className="neutral-text">{data?.title}</p>
+      <p className="neutral-text pt-[25px] pb-[5px]">{data?.title}</p>
       <a
         href="/"
-        className="text-2xl font-semibold text-secondary hover:text-primary"
+        className="text-2xl font-semibold leading-[36px] text-secondary hover:text-primary"
       >
         {data?.name}
       </a>

@@ -164,6 +164,9 @@ body::-webkit-scrollbar {
   .footer-titles {
     @apply font-semibold text-2xl leading-[28.04px] text-white capitalize mb-7;
   }
+  .mail-div:has(input:focus) {
+    @apply ring-primary focus:ring-2 transition-all duration-200 outline-none;
+  }
 }
 .portfolio-btn {
   @apply text-neutral hover:text-primary text-lg font-medium;
