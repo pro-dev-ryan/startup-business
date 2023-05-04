@@ -1,18 +1,22 @@
 import React from "react";
 import image from "../../assets/skills/Image.png";
+import ProgressBar from "@ramonak/react-progress-bar";
 const Progress = () => {
   const datas = [
     {
       name: "Business Consulting",
       percentage: "74%",
+      percent: 74,
     },
     {
       name: "Business Startup",
       percentage: "86%",
+      percent: 86,
     },
     {
       name: "Marketing Analysis",
       percentage: "48%",
+      percent: 48,
     },
   ];
   return (
@@ -20,7 +24,7 @@ const Progress = () => {
       <div className="flex bg-[#F7F9FC]">
         {/* Image section */}
         <div className="w-full relative lg:w-1/2">
-          <img src={image} alt="image" />
+          <img src={image} alt="Happy Team" />
         </div>
         {/* Text content */}
         <div className="w-full pt-[137px] pb-[137px] xl:w-1/2 md:flex items-center">
@@ -35,39 +39,25 @@ const Progress = () => {
             </p>
             {/* Progress Bar */}
 
-            <div className="pb-[30px]">
-              <div className="flex justify-between space-y-[10px]">
-                <p className="neutral-text text-secondary">
-                  Business Consulting
-                </p>
-                <p className="neutral-text text-secondary">74%</p>
+            {datas.map((data, i) => (
+              <div className="pb-[30px]" key={i}>
+                <div className="flex justify-between space-y-[10px]">
+                  <p className="neutral-text text-secondary">{data?.name}</p>
+                  <p className="neutral-text text-secondary">
+                    {data?.percentage}
+                  </p>
+                </div>
+                <div className="bar">
+                  <ProgressBar
+                    completed={data?.percent}
+                    animateOnRender={true}
+                    height="4px"
+                    isLabelVisible={false}
+                    bgColor="#008AFF"
+                  />
+                </div>
               </div>
-              <div className="bar">
-                <span className={`bar-active w-[74%]`}></span>
-              </div>
-            </div>
-            <div className="pb-[30px]">
-              <div className="flex justify-between space-y-[10px]">
-                <p className="neutral-text text-secondary">Business Startup</p>
-                <p className="neutral-text text-secondary">86%</p>
-              </div>
-              <div className="bar">
-                <span className={`bar-active w-[86%]`}></span>
-              </div>
-            </div>
-            <div className="pb-[30px]">
-              <div className="flex justify-between space-y-[10px]">
-                <p className="neutral-text text-secondary">
-                  Marketing Analysis
-                </p>
-                <p className="neutral-text text-secondary">48%</p>
-              </div>
-              <div className="bar">
-                <span
-                  className={`bar-active w-[48%] border-r border-primary`}
-                ></span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
