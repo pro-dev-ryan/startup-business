@@ -6,7 +6,7 @@ const Faq = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className={`p-[35px] w-[757px] bg-white transition-all duration-100  overflow-hidden ${
+      className={`p-[35px] w-[757px] bg-white transition-all duration-200  overflow-hidden ${
         isOpen ? "h-[206px]" : "h-[99px]"
       }`}
     >

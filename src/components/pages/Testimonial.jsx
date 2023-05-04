@@ -59,11 +59,11 @@ const Testimonial = () => {
         <div className="flex gap-2 md:gap-3 xl:gap-5 items-center">
           <button
             href="/"
-            className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-200 prev-slide"
+            className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-500 next-slide"
           >
             <Left />
           </button>
-          <button className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-200 next-slide">
+          <button className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-200 prev-slide ">
             <Right />
           </button>
         </div>

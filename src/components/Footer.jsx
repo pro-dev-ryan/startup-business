@@ -6,6 +6,16 @@ import Github from "../assets/footer/Github.jsx";
 import Twitter from "../assets/footer/Twitter.jsx";
 
 const Footer = () => {
+  const menus = [
+    "Services",
+    "Pricing",
+    "Contact",
+    "Careers",
+    "Works",
+    "Resources",
+    "News",
+    "Privacy Policy"
+  ];
   return (
     <div className="bg-secondary">
       <div className="section-plate">
@@ -19,30 +29,25 @@ const Footer = () => {
               offer the tools needed for having a quicks and most web projects.
             </p>
           </div>
-          <div className="w-1/2">
+          <div>
             <h2 className="footer-titles w-full">about company</h2>
-            <div className="flex justify-between gap-5">
-              <ul className="flex flex-col neutral-text">
-                <a href="/">Services</a>
-                <a href="/">Pricing</a>
-                <a href="/">Contact</a>
-                <a href="/">Careers</a>
-              </ul>
-              <ul className="flex flex-col neutral-text">
-                <a href="/">Works</a>
-                <a href="/">Resources</a>
-                <a href="/">News</a>
-                <a href="/">Privacy Policy</a>
+            <div style={{ columnCount: 2 }}>
+              <ul className="whitespace-nowrap">
+                {menus.map((m, i) => (
+                  <li key={i}>
+                    <a className="neutral-text hover:text-white" href="/">{m}</a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
           <div>
             <h2 className="footer-titles">Account</h2>
             <ul className="flex flex-col neutral-text">
-              <a href="/">Profile</a>
-              <a href="/">Setting</a>
-              <a href="/">Billing</a>
-              <a href="/">Notifications</a>
+              <a className="neutral-text hover:text-white" href="/">Profile</a>
+              <a className="neutral-text hover:text-white" href="/">Setting</a>
+              <a className="neutral-text hover:text-white" href="/">Billing</a>
+              <a className="neutral-text hover:text-white" href="/">Notifications</a>
             </ul>
           </div>
           <div>
@@ -67,7 +72,7 @@ const Footer = () => {
             <a href="/" className="text-grayText hover:text-primary">
               <Github />
             </a>
-            <a href="/" className="text-grayText hover:text-primary bg-primary">
+            <a href="/" className="text-grayText hover:text-primary">
               <Twitter />
             </a>
           </div>

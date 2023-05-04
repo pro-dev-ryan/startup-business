@@ -3,8 +3,8 @@ import NumberCounter from "number-counter";
 
 const ProfileCard = ({ data }) => {
   return (
-    <div>
-      <div className="border-0 pt-[62px] pb-[59px] my-auto flex flex-col md:flex-row items-center text-center gap-5 justify-center shadow-sm shadow-neutral md:shadow-none w-[276px] relative profiles">
+    <div className="profiles">
+      <div className="border-0 pt-[62px] pb-[59px] my-auto flex flex-col md:flex-row items-center text-center gap-5 justify-center shadow-sm shadow-neutral md:shadow-none w-[276px]">
         <img src={data?.image} alt={data?.alt} />
         <div>
           <NumberCounter

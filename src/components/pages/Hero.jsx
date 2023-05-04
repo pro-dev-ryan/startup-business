@@ -23,8 +23,7 @@ const Hero = () => {
           <div>
             <form action="">
               <div
-                className="mail-div rounded-sm w-11/12 lg:w-10/12 flex justify-between bg-white ring-2 ring-transparent
-                    hover:ring-primary focus:ring-primary  transition-ring duration-200 p-2"
+                className="mail-div rounded-sm w-11/12 lg:w-10/12 flex justify-between bg-white border-2 border-transparent transition-all duration-250 p-2"
               >
                 <div className="flex relative w-full h-[61px]  max-h-[71px]">
                   <span className="absolute left-[30px] top-1/2 -translate-y-1/2">

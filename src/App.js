@@ -1,3 +1,5 @@
+
+import "./App.css"
 import Navbar from "./components/Navbar";
 import Accordion from "./components/pages/Accordion";
 import Filter from "./components/pages/Filter";
