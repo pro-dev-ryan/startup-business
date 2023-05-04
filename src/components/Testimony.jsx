@@ -9,7 +9,7 @@ const Testimony = ({ data }) => {
           <Background />
         </div>
         <span className="absolute top-[8%] left-[8%] qoute w-10 h-10"></span>
-        <p className="w-11/12 p-10 pt-20">{data?.comment}</p>
+        <p className="w-11/12 p-10 pt-[95px]">{data?.comment}</p>
       </div>
       {/* client */}
       <div className="flex gap-5 items-center pl-12 pt-5">

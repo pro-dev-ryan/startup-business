@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button";
 import image from "../../assets/portfolio/Image.png";
 import image1 from "../../assets/portfolio/Image 1.png";
@@ -10,7 +10,7 @@ const Filter = () => {
   const datas = [
     {
       id: "01",
-      category: "developement",
+      category: "all",
       image: image,
       name: "Quillow Learning Platform Dashboard",
       title: "Web Development",
@@ -37,6 +37,16 @@ const Filter = () => {
       title: "Web Development",
     },
   ];
+  const [filtered, setFiltered] = useState();
+  const filterFunc = (value) => {
+    if (value !== "all") {
+      const items = datas.filter((data) => data.category.includes(value));
+      setFiltered(items);
+    } else {
+      const items = datas.map((data) => data);
+      setFiltered(items);
+    }
+  };
   return (
     <div className="section-plate pt-[140px]">
       <p className="sub-head text-center pb-[10px]">portfolio works</p>
@@ -49,26 +59,24 @@ const Filter = () => {
             Filter by:
           </p>
           <ul className="flex gap-2 md:gap-3 lg:gap-5 xl:gap-[30px]">
-            <li>
-              <button className="portfolio-btn">All</button>
-            </li>
-            <li>
-              <button className="portfolio-btn">Development</button>
-            </li>
-            <li>
-              <button className="portfolio-btn">Design</button>
-            </li>
-            <li>
-              <button className="portfolio-btn">Branding</button>
-            </li>
+            {datas.map((data) => (
+              <li>
+                <button
+                  onClick={() => filterFunc(data?.category)}
+                  className="portfolio-btn"
+                >
+                  {data?.category}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
         <Button text={"See More Work"} />
       </div>
       <div className="grid grid-cols-2 md:gap-3 lg:gap-5 xl:gap-[70px] pt-[55px] justify-items-stretch">
-        {datas.map((data) => (
-          <Portfolio key={data.id} data={data} />
-        ))}
+        {filtered && filtered.map((f) => <Portfolio key={f?.id} data={f} />)}
+        {!filtered &&
+          datas.map((data) => <Portfolio key={data?.id} data={data} />)}
       </div>
     </div>
   );

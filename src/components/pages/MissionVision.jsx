@@ -4,14 +4,12 @@ import image from "../../assets/mission-vision/image.png";
 
 const MissionVision = () => {
   const [active, setActive] = useState(false);
-
-  const tabFunc = () => {};
   return (
     <div className="section-plate flex justify-between pb-[190px]">
       {/* Image-Content */}
       <div>
         <div className="w-[525px] bg-slate-500 md:relative image-bg z-10 md:top-1/2 md:-translate-y-1/2 left-[10%]">
-          <img className="w-full" src={image} alt="image" />
+          <img className="w-full" src={image} alt="A woman holding books" />
           <div className="absolute image-div bottom-[30px] right-[30px] flex items-center bg-[#36CD77] w-[210px] h-[84px] rounded">
             <h2 className="pl-5 pr-[10px]">25+</h2>
             <p>years of experience</p>
