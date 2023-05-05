@@ -55,9 +55,8 @@ const Services = () => {
           {datas.map((data, key) => (
             <div
               key={key}
-              className={`bg-[#ffffff] ${
-                data.id % 2 != 0 ? "" : "md:relative md:-top-10"
-              } shadow-xl shadow-[#D2D9E059]  p-12 space-y-5 border-b-4 border-transparent transition-border duration-300 hover:border-b-primary hover:border-b-4 rounded-sm`}
+              className={`bg-[#ffffff] ${data.id % 2 !== 0 ? "" : "md:relative md:-top-10"
+                } shadow-xl shadow-[#D2D9E059]  p-12 space-y-5 border-b-4 border-transparent transition-border duration-300 hover:border-b-primary hover:border-b-4 rounded-lg`}
             >
               <img src={data?.icons} alt="" />
               <h4 className="font-semibold text-xl text-secondary">

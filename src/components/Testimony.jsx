@@ -4,8 +4,8 @@ import Background from "../assets/testimonials/Background";
 const Testimony = ({ data }) => {
   return (
     <div>
-      <div className="h-[266px] relative z-[11] hover:text-white">
-        <div className="absolute text-[#F7F9FC] hover:text-primary z-[-5]">
+      <div className="h-[266px] relative z-[11]">
+        <div className="absolute text-[#F7F9FC] z-[-5]">
           <Background />
         </div>
         <span className="absolute top-[8%] left-[8%] qoute w-10 h-10"></span>

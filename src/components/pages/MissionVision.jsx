@@ -27,7 +27,7 @@ const MissionVision = () => {
           varius enim in eros elementum tristique.
         </p>
         <div className="tab-container">
-          <div className="bg-bgColor p-1 lg:p-2 w-fit font-semibold rounded-sm tabs">
+          <div className="bg-bgColor p-1 space-x-[2px]  lg:p-2 w-fit font-semibold rounded-sm tabs">
             <button
               onClick={() => setActive(!active)}
               className={`tab-btn ${active ? "btn-active" : ""}`}

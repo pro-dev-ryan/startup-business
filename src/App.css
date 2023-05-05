@@ -133,18 +133,6 @@ body::-webkit-scrollbar {
 .profiles {
     position: relative;
 }
-
-.profiles:not(:last-child)::after {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 61px;
-    background-color: #dee7ee;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-}
-
 .g {
     background-image: url("./assets/bgGrad/Bg.png");
     background-repeat: no-repeat;
@@ -168,9 +156,11 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
 }
 
+.swiper-slide-next svg {
+    color: #008aff;
+}
 .swiper-slide-next {
-    background-color: #008aff;
-    color: #ffffff;
+    color: #fff;
 }
 
 .collapsed-title {

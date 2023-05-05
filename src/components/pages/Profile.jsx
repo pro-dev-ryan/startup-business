@@ -32,7 +32,7 @@ const Profile = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 shadow-[(0px_4px_4px_rgba(0,0,0,0.25))] section-plate py-[62px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-y-[2px] shadow-y-lg shadow-grayText  border-opacity-5 section-plate py-[62px]">
       {datas.map((data, i) => (
         <ProfileCard data={data} key={i} />
       ))}

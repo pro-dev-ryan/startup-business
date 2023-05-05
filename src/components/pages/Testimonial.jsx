@@ -59,11 +59,11 @@ const Testimonial = () => {
         <div className="flex gap-2 md:gap-3 xl:gap-5 items-center">
           <button
             href="/"
-            className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-500 next-slide"
+            className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-500" id="prev"
           >
             <Left />
           </button>
-          <button className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-200 prev-slide ">
+          <button className="hover:text-white text-primary bg-[#EBF6FF] hover:bg-primary w-12 h-12 rounded-sm transition-all duration-200" id="next">
             <Right />
           </button>
         </div>
@@ -71,9 +71,8 @@ const Testimonial = () => {
       <div>
         <Swiper
           modules={[Autoplay, Navigation]}
-          navigation={{ prevEl: ".prev-slide", nextEl: ".next-slide" }}
+          navigation={{ prevEl: "#prev", nextEl: "#next" }}
           autoplay={{ delay: 5000 }}
-          loop={true}
           grabCursor={true}
           spaceBetween={10}
           breakpoints={{
